@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        .four {
+            width: 32.26%;
+        }
+        /* COLUMNS */
+        /* CLEARFIX */
+        
+        .cf:before,
+        .cf:after {
+            content: " ";
+            display: table;
+        }
+        
+        .cf:after {
+            clear: both;
+        }
+        
+        .cf {
+            *zoom: 1;
+        }
+        /* GENERAL STYLES FOR BOX AND OVERLAY */
+        
+        .box {
+            display: block;
+            overflow: hidden;
+            background-color: #bbb;
+            text-align: center;
+            position: relative;
+        }
+        
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+        /* SLIDE IN */
+        
+        .slide-in .overlay {
+            background-color: #6addaa;
+            line-height: 200px;
+            color: #fff;
+            transform: translateX(-100%);
+            -webkit-transition: transform 0.5s ease-out;
+            -o-transition: transform 0.5s ease-out;
+            transition: transform 0.5s ease-out;
+        }
+        
+        .slide-in .box:hover .overlay {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <div class="card-deck">
+            <div class="slide-in four">
+                <div class="card">
+                    <img src="img/giortechnology.png" class="card-img-top" alt="...">
+                    <div class="card-body box">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="overlay">
+                            <div class="list-group">
+                                <button type="button" class="list-group-item list-group-item-action active">
+                                  Cras justo odio
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/technologyandhealth.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/pentagonito.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slide-in four">
+            <div class="box">
+                <span class="original">
+                    <h1>Hover!</h1>
+                    <p>Slide in from left</p>
+                </span>
+                <div class="overlay">
+                    <button class="btn btn-success">Visitar Pagina</button>
+                    <i class="fa fa-commenting-o fa-3x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <div class="p-2 text-center">
+            <h3>Projects grid</h3>
+            <div class="project-filter-buttons">
+                <button data-filter="" class="btn btn-square filter-button clear-button active-filter">All</button>
+                <button data-filter="angular" class="btn btn-square filter-button">Angular</button>
+                <button data-filter="bootstrap" class="btn btn-square filter-button">Bootstrap</button>
+                <button data-filter="firebase" class="btn btn-square filter-button">Firebase</button>
+                <button data-filter="php" class="btn btn-square filter-button">PHP</button>
+            </div>
+        </div>
+        <div class="pt-3">
+            <div class="row row-cols-1 row-cols-md-3 projects-work">
+                <div class="col mb-4 bootstrap react php">
+                    <div class="card">
+                        <img src="img/giortechnology.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-text">Desing</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 angular php">
+                    <div class="card">
+                        <img src="img/technologyandhealth.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-text">Desing</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 php">
+                    <div class="card">
+                        <img src="img/pentagonito.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-text">Desing</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 angular">
+                    <div class="card">
+                        <img src="http://placehold.it/350x250" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-text">Desing</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 firebase">
+                    <div class="card">
+                        <img src="http://placehold.it/350x250" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h3 class="card-text">Desing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+        const iso = new Isotope(".projects-work");
+        const filterButtons = Array.prototype.slice.call(
+            document.querySelectorAll(".filter-button")
+        );
+
+        filterButtons.map((button) => {
+            button.addEventListener("click", function() {
+                filterButtons.map((button) => button.classList.remove("active-filter"));
+                const type = this.getAttribute("data-filter");
+                this.classList.add("active-filter");
+                iso.arrange({
+                    // item element provided as argument
+                    filter: type && `.${type}`
+                });
+                iso.layout();
+            });
+        });
+    </script>
+</body>
+
+</html>

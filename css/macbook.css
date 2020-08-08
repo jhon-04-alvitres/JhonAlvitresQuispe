@@ -1,0 +1,67 @@
+#macbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#bezel {
+    width: 480px;
+    height: 320px;
+    background: #3f3f41;
+    border-radius: 15px 15px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#camera {
+    width: 5px;
+    height: 5px;
+    background: #939498;
+    border-radius: 100%;
+    align-self: center;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+#screen {
+    width: 95%;
+    height: 90%;
+    background: #141414;
+    margin: 0 auto;
+    border-radius: 2.5px;
+    oveflow-x: hidden;
+}
+
+#bottom {
+    width: 590px;
+    height: 15px;
+    background: #d1d2d4;
+    border-radius: 2.5px 2.5px 0 0;
+}
+
+#indent {
+    width: 84px;
+    height: 8px;
+    background: #bcbdc1;
+    border-radius: 0 0 5px 5px;
+    margin: 0 auto;
+}
+
+#lower {
+    width: 590px;
+    height: 7.5px;
+    background: #e6e8e7;
+    border-radius: 0 0 70% 70%;
+}
+
+#frame {
+    -ms-zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
+}
